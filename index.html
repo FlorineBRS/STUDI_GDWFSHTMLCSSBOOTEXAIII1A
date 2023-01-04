@@ -27,10 +27,10 @@
                 <a class="nav-link" aria-current="page" href="#"></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Notre histoire</a>
+                <a class="nav-link" href="#story">Notre histoire</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#aids" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Aides
                 </a>
                 <ul class="dropdown-menu">
@@ -41,10 +41,10 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Evènements</a>
+                <a class="nav-link" href="#events">Evènements</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -55,11 +55,13 @@
         <h2 class="hero-sub-hearding">
             Association d'aides aux femmes en situation de précarité extrême
         </h2>
-        <p class="text-center hero-hearding-paragraph">
-            Briser les chaînes de la dépendance affective et financière
-        </p>
+        <!--<p class="text-center hero-hearding-paragraph">
+            Briser les chaînes de la dépendance affective et financière <br>
+            Voler de ses propres ailes <br>
+            Retrouver sa dignité
+        </p>-->
     </section>
-    <section class="our-story mt-5">
+    <section class="story-container mt-5" id="story">
         <div class="heading">
             <h3 class="top-heading text-uppercase text-center mb-3">
                 Notre histoire
@@ -111,21 +113,87 @@
             </div>
         </div>
     </section>
-    <section class="list-aids">
+    <section class="events-container">
         <div class="events">
             <h3 class="top-heading text-uppercase text-center mb-3">
                 Evènements associatifs
             </h3>
         </div>
-        <div class="container event-container">
-           <div class="row">
+        <div class="container event-container" id="events">
+           <!--<div class="row">
                 <div class="d-grid gap-2 mt-9 d-md-flex justify-content-sm-center contact-form-button">
-                    <button type="submit" class="btn btn-info">Accéder à nos évènements</button>
+                    <a href="./events.html">
+                    <button type="button" class="btn btn-info">Accéder à nos évènements</button>
+                    </a>
                 </div> 
-            </div>
+            </div> -->
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card" style="width: 28rem;">
+                        <div class="card-body">
+                            <h4 class="card-title mb-3">Atelier Bien-être</h4>
+                            <img src="./img/atelier-bienetre.jpg" alt="FFA-atelier-bienetre" class="card-img-top event-img">
+                            <p class="card-text">
+                                FFA organise un tous les mardis et vendredi, des ateliers de bien-être : Yoga, Reflexologie,   Sophrologie, coiffure, maquillage.
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, aperiam?
+                            </p>
+                            <div class="d-grid d-md-flex justify-content-lg-end">
+                                <button type="button" class="btn">Inscrivez-vous</button>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card" style="width: 28rem;">
+                        <div class="card-body">
+                            <h4 class="card-title mb-3">Atelier Coaching emploi</h4>
+                            <img src="./img/coaching-emploi1.jpg" alt="FFA-visite-du-salon-de-lemploi" class="card-img-top event-img" >
+                            <p class="card-text">
+                                FFA organise un tous les premiers mercredis du mois et sur toute l'année 2022, des ateliers coaching emploi : rédiger son CV et sa Lettre de motivation, se préparer à un entretien téléphonique/physique.
+                            </p> 
+                            <div class="d-grid d-md-flex justify-content-lg-end">
+                                <button type="button" class="btn">Inscrivez-vous</button>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+             </div>
+
+             <div class="row">
+                <div class="col-md-6">
+                    <div class="card" style="width: 28rem;">
+                        <div class="card-body">
+                          <h4 class="card-title mb-3">Formation Agent de service </h4>
+                          <img src="./img/formation-ash.jpg" class="card-img-top event-img" alt="FFA-formation-ASH" >
+                          <p class="card-text">
+                            FFA propose une formation de 2 mois gratuite et une mise en situation par des stages de 2 semaines en milieu hospitalier. 
+                          </p> 
+                          <div class="d-grid gap-2 d-md-flex justify-content-end">
+                            <button type="button" class="btn">Inscrivez-vous</button>
+                        </div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card" style="width: 28rem;">
+                        <div class="card-body">
+                          <h4 class="card-title mb-3">Formation Bureautique</h4>
+                          <img src="./img/formation-bureautique.jpg" class="card-img-top event-img" alt="FFA-formation-bureautique" >
+                          <p class="card-text">
+                            FFA propose une formation de 2 mois gratuite et un stage en entreprise. 
+                          </p>
+                          <div class="d-grid gap-2 d-md-flex justify-content-end">
+                            <button type="button" class="btn">Inscrivez-vous</button>
+                        </div> 
+                        </div>
+                    </div>
+                </div>
+             </div>
+
         </div>
     </section>
-    <section class="list-aids">
+    <section class="aids-list-container" id="aids">
         <div class="heading">
             <h3 class="top-heading text-uppercase text-center mb-3">
                 Les dispositifs d'aides 
@@ -134,56 +202,55 @@
         <div class="container">
            <div class="row">
                 <div class="col-md-6">
-                    <h4 class="mb-3 mt-3 fw-bold">
-                        Ecoute
-                    </h4>
-                    <a href="#">
-                        <img src="./img/psychologue.jpg" alt="FFA-écoute-Psychologue">
-                    </a>
-                    <p>
-                        FFA prend en compte chaque situation et propose un accompagnement psychologique.
-                    </p>
-                    
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Ecoute</h4>
+                            <img src="./img/psychologue.jpg" alt="FFA-écoute-Psychologue" class="card-img-top">
+                            <p>
+                                FFA prend en compte chaque situation et propose un accompagnement psychologique.
+                            </p> 
+                        </div>
+                    </div>                    
                 </div>
                 <div class="col-md-6">
-                    <h4 class="mb-3 mt-3 fw-bold">
-                        Formations
-                    </h4>
-                    <a href="#">
-                        <img src="./img/formation.jpg" alt="FFA-offre de formation">
-                    </a>
-                    <p>
-                        FFA propose des formations adaptées garantissant l'insertion professionnelle. 
-                    </p>
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Formations</h4>
+                            <img src="./img/formation.jpg" alt="FFA-offre de formation" class="card-img-top">
+                            <p>
+                                FFA propose des formations adaptées garantissant l'insertion professionnelle. 
+                            </p> 
+                        </div>
+                    </div>                    
                 </div>
+            </div>
            <div class="row">
                 <div class="col-md-6">
-                    <h4 class="mb-3 mt-3 fw-bold">
-                        Emplois
-                    </h4>
-                    <a href="#">
-                        <img src="./img/emploi.jpeg" alt="FFA-emplois">
-                    </a>
-                    <p>
-                        FFA accompagne dans la recherche d'emplois avec la rédaction de CV et la préparation auc entretiens d'embauche.  
-                    </p>
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Emplois</h4>
+                            <img src="./img/emploi.jpeg" alt="FFA-emplois" class="card-img-top">
+                            <p>
+                                FFA accompagne dans la recherche d'emplois avec la rédaction de CV et la préparation auc entretiens d'embauche.  
+                            </p> 
+                        </div>
+                    </div>                    
                 </div>
                 <div class="col-md-6">
-                    <h4 class="mb-3 mt-3 fw-bold">
-                        Hébergements
-                    </h4>
-                    <a href="#">
-                        <img src="./img//logement.jpg" alt="FFA-logement">
-                    </a>
-                    <p>
-                        FFA propose des solutions d'hébergement temporaires et accompagne dans la recherche d'un hébergement définitif. 
-                    </p>
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Hébergements</h4>
+                            <img src="./img//logement.jpg" alt="FFA-logement" class="card-img-top">
+                            <p>
+                                FFA propose des solutions d'hébergement temporaires et accompagne dans la recherche d'un hébergement définitif.  
+                            </p> 
+                        </div>
+                    </div>                    
                 </div>
-           </div>
             </div>
         </div>
     </section>
-    <section class="contact-form mt-5">
+    <section class="contact-form-container mt-5" id="contact">
         <h3 class="top-heading text-uppercase text-center mb-3">
             Nous contacter
         </h3>

@@ -2,12 +2,19 @@ body{
     background: #ffffff;
 }
 nav{
-    background-color:#037EB9 ;
+    background:#037EB9 ;
 }
-.navbar-brand{
+.logo{
     color: #ffffff;
     font-size: 2rem;
     letter-spacing: 0.7rem;
+    margin-left: 2%;
+}
+.logo:hover{
+    color: #ffffff;
+    font-size: 2.5rem;
+    letter-spacing: 0.7rem;
+    font-weight: bold;
 }
 .navbar-brand, .navbar-brand:hover, .navbar-brand:active{
     color: #ffffff;
@@ -16,16 +23,16 @@ nav{
 }
 .navbar-collapse ul > li > a {
     color: #ffffff;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
+    margin: 2rem;
 }
-.navbar-collapse ul > li > a:hover, .navbar-collapse ul > li > a:active {
+.navbar-collapse ul > li > a:hover, .navbar-collapse ul > li > a:active, .navbar-collapse ul > li > a.active  {
     background: #ffffff;
     color: #037EB9;
     font-size: 1rem;
     font-weight: bold;
     border-radius: 10px;
 }
-
 section.hero-section {
     background-image: url(./img/hero-img3.jpeg);
     background-repeat: no-repeat;
@@ -36,14 +43,14 @@ section.hero-section {
     padding-top: 10rem;
 }
 .hero-hearding{
-    font-size:2.2rem ;
+    font-size:3.5rem ;
     line-height: 3.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 10rem;
     font-style: italic;
     color: #037EB9;
 }
 .hero-sub-hearding{
-    font-size:2rem ;
+    font-size:2.5rem ;
     line-height: 2.5rem;
     margin-bottom: 5rem;
     color: #f707d7;
@@ -61,14 +68,20 @@ section.aids-list-container img{
     height: 60%;
     margin-right: 20%;
 }
-h3{
-    font-size: 120%; 
-    font-weight: bold;
+.container-title{
+    height: 3.3rem;
     background:  #037EB9;
     color: #ffffff;
+    margin-bottom: 5rem;
+}
+h3{
+    font-size: 1.2rem; 
+    font-weight: bold;
+    padding-top: 1rem;
+    letter-spacing: .3rem;
 }
 h4{
-    font-size: 110%;
+    font-size: 1.2rem;
     color: #037EB9;
 }
 p{
@@ -77,7 +90,6 @@ p{
     padding: 2%;
     margin-top: 2%;
 }
-/*
 .event-container{
     background-image: url(./img/evènement.jpg);
     background-repeat: no-repeat;
@@ -86,21 +98,10 @@ p{
     text-align: center;
     color: #ffffff;
     padding-top: 15rem;
-}*/
-.btn {
-    font-size: 1rem;
-    background:  #037EB9;
-    color: #ffffff;
-    border: none;
 }
-.btn:hover {
-    background:  #037EB9;
-    color: #ffffff;
-    border: none;
-    font-weight: bold;
-    font-size: .9rem;
+form{
+    padding-bottom: 5rem;
 }
-/**/
 .card{
     width: 100%;
     height: 100%;
@@ -115,4 +116,86 @@ p{
     width: 90%;
     height: 50%;
     border-radius: 10px;
+}
+.btn {
+    font-size: 1rem;
+    background:  #037EB9;
+    color: #ffffff;
+    border: none;
+}
+.btn:hover {
+    background:  #037EB9;
+    color: #ffffff;
+    border: none;
+    font-weight: bold;
+    font-size: .9rem;
+}
+footer{
+    background:#037EB9;
+    color: #ffffff;
+}
+.footer-columns{
+    padding-left: 10%;
+}
+.footer-columns h5{
+    padding-left: 9%;
+    text-transform: uppercase;
+}
+footer ul li{
+    list-style: none;
+    font-size: 1rem;
+}
+.footer-copyright a{
+    font-weight: bold;
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #ffffff;
+    text-decoration: none;
+}
+/*MEDIA QUERIES*/
+@media screen and (max-width: 768px){
+    .hero-hearding{
+        font-size:2rem ;
+        line-height: 1.5rem;
+        margin-bottom: 3rem;
+        font-style: italic;
+        color: #037EB9;
+    }
+    .hero-sub-hearding{
+        font-size:1.2rem ;
+        line-height: 1rem;
+        margin-bottom: 1rem;
+        color: #f707d7;
+    }
+    footer ul li{
+        list-style: none;
+        font-size: 0.7rem;
+    }
+    .footer-copyright, .footer-copyright a{
+        font-weight: bold;
+        font-size: .7rem;
+        font-style: italic;
+        color: #ffffff;
+        text-decoration: none;
+    }
+    .footer-columns h5{
+        font-size: .8rem;
+        padding-left: 9%;
+        text-transform: uppercase;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 992px)  {
+    .container-title{
+        height: 3.3rem;
+        background:  #037EB9;
+        color: #ffffff;
+        margin-bottom: 2rem;
+    }
+    section.aids-list-container{
+        margin-top: 3em;
+    }
+    section.aids-list-container img{
+        width: 100%;
+        height: 30%;
+    }
 }

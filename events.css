@@ -124,6 +124,10 @@ footer ul li{
     color: #ffffff;
     text-decoration: none;
 }
+.tel-asso, .email-asso{
+    color: #ffffff;
+}
+
 /*MEDIA QUERY*/
 @media screen and (max-width: 768px){
     .logo{
@@ -140,7 +144,7 @@ footer ul li{
         color: #f707d7;
     }
     .card-container{
-        margin-bottom: 5%;
+        padding-bottom: 5%;
     }
     footer ul li{
         list-style: none;
@@ -157,5 +161,11 @@ footer ul li{
         font-size: .8rem;
         padding-left: 9%;
         text-transform: uppercase;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .card-container{
+        padding-bottom: 5%;
     }
 }

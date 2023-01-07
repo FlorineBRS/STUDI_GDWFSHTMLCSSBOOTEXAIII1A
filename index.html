@@ -133,8 +133,8 @@
 
         <!--AIDS SECTION-->
         <section class="aids-list-container" id="aids">
-            <div class="container-title">
-                <h3 class="top-heading text-uppercase text-center mb-3">
+            <div itemscope itemtype="http://schema.org/Article" class="container-title">
+                <h3 itemprop="name" class="top-heading text-uppercase text-center mb-3">
                     Les dispositifs d'aides 
                 </h3>
             </div>
@@ -142,12 +142,14 @@
                <div class="row">
                     <div class="col-md-6 py-5">
                         <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title mb-4 text-center fw-bold" itemprop="name">Accompagnement psychologique</h4>
+                            <div itemscope itemtype="http://schema.org/Article" class="card-body">
+                                <h4 class="card-title mb-4 text-center fw-bold" itemprop="name">
+                                    <span itemprop="name">Accompagnement psychologique</span>
+                                </h4>
                                 <a href="#">
-                                    <img src="./img/psychologue.jpg" alt="FFA-écoute-Psychologue" class="card-img-top">
+                                    <img itemprop="image" src="./img/psychologue.jpg" alt="FFA-écoute-Psychologue" class="card-img-top">
                                 </a>
-                                <p class="card-text" itemprop="genre">
+                                <p itemprop="articleBody" class="card-text">
                                     FFA prend en compte chaque situation et propose un accompagnement psychologique.
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quis sint eius rem quod a quibusdam atque accusamus adipisci sunt.
                                 </p> 
@@ -159,12 +161,12 @@
                     </div>
                     <div class="col-md-6">
                         <div class="card py-5">
-                            <div class="card-body">
+                            <div itemscope itemtype="http://schema.org/Article" class="card-body">
                                 <h4 class="card-title mb-4 text-center fw-bold" itemprop="name">Formations aux métiers qui recrutent</h4>
                                 <a href="#">
-                                    <img src="./img/formation.jpg" alt="FFA-offre de formation" class="card-img-top">
+                                    <img itemprop="image" src="./img/formation.jpg" alt="FFA-offre de formation" class="card-img-top">
                                 </a>
-                                <p class="card-text" itemprop="genre">
+                                <p itemprop="articleBody" class="card-text">
                                     FFA propose des formations adaptées garantissant l'insertion professionnelle. 
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quis sint eius rem quod a quibusdam atque accusamus adipisci sunt.
                                 </p>
@@ -178,12 +180,12 @@
                <div class="row">
                     <div class="col-md-6">
                         <div class="card py-5">
-                            <div class="card-body">
+                            <div itemscope itemtype="http://schema.org/Article" class="card-body">
                                 <h4 class="card-title mb-4 text-center fw-bold" itemprop="name">Aide à la recherche d'emploi</h4>
                                 <a href="#">
-                                    <img src="./img/emploi.jpeg" alt="FFA-emplois" class="card-img-top">
+                                    <img itemprop="image" src="./img/emploi.jpeg" alt="FFA-emplois" class="card-img-top">
                                 </a>
-                                <p class="card-text" itemprop="genre">
+                                <p itemprop="articleBody" class="card-text">
                                     FFA accompagne dans la recherche d'emplois avec la rédaction de CV et la préparation auc entretiens d'embauche.  
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quis sint eius rem quod a quibusdam atque accusamus adipisci sunt.
                                 </p>
@@ -195,12 +197,12 @@
                     </div>
                     <div class="col-md-6">
                         <div class="card py-5">
-                            <div class="card-body">
+                            <div itemscope itemtype="http://schema.org/Article" class="card-body">
                                 <h4 class="card-title mb-4 text-center fw-bold" itemprop="name">Hébergements provisoires</h4>
                                 <a href="#">
-                                    <img src="./img/hebergement.jpg" alt="FFA-logement" class="card-img-top">
+                                    <img itemprop="image" src="./img/hebergement.jpg" alt="FFA-logement" class="card-img-top">
                                 </a>
-                                <p class="card-text" itemprop="genre">
+                                <p itemprop="articleBody" class="card-text">
                                     FFA propose des solutions d'hébergement temporaires et accompagne dans la recherche d'un hébergement définitif. 
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quis sint eius rem quod a quibusdam atque accusamus adipisci sunt. 
                                 </p>
@@ -272,39 +274,46 @@
     <!--END OF MAIN-->
 
     <!--FOOTER-->
-    <footer class="container-fluid">
+    <!--FOOTER-->
+    <footer itemscope itemtype="http://schema.org/Event" itemref="_name29 _image30" class="container-fluid">
         <div class="row mt-9 pt-5">
             <div class="col-sm-12 col-md-6 col-lg-4 footer-columns">
                 <h5>Nos services</h5>
-                <ul>
-                    <li>Ecoute psychologique</li>
-                    <li>Formation</li>
-                    <li>Recherche d'emploi</li>
-                    <li>Hébergement temporaire</li>
+                <ul itemprop="description">
+                    <li>Acoompagnement psychologique</li>
+                    <li>Formations dans les secteurs en tension</li>
+                    <li>Aide dans la recherche d'emploi</li>
+                    <li>Hébergements temporaires</li>
                 </ul>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 footer-columns">
+            <div id="_location2" itemprop="location" itemscope itemtype="http://schema.org/Place" class="col-sm-12 col-md-6 col-lg-4 footer-columns">
                 <h5>Adresse</h5>
-                <ul>
-                    <li>6 rue de Nantes</li>
-                    <li>35000 Rennes</li>
-                    <li>Tel : 06.00.00.00.00</li>
-                    <li>contact.ffa@gmail.com</li>
+                <ul itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                    <li itemprop="streetAddress">6 rue de Nantes</li>
+                    <li>
+                        <span itemprop="postalCode">35000</span>
+                        <span itemprop="addressLocality">Rennes</span>  
+                    </li>
+                    <li> Tel :
+                        <a href="tel:+33600000000" class="tel-asso">06 00 00 00 00</a> 
+                    </li>
+                    <li> Email :
+                        <a href="mailto:contact@ffa.org" class="email-asso">contact@ffa.org</a>
+                    </li>
                 </ul>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-4 footer-columns">
                 <h5>Les horaires</h5>
                 <ul>
-                    <li>lundi : 9h-17h</li>
-                    <li>Mardi : 9h-17h</li>
-                    <li>Mercredi : 9h-17h</li>
-                    <li>Jeudi : 9h-17h</li>
+                    <li>Mardi : 9h-19h</li>
+                    <li>Mercredi : 9h-19h</li>
+                    <li>Jeudi : 9h-19h</li>
                     <li>Vendredi : 9h-17h</li>
                 </ul>
             </div>
         </div>
         <div class="footer-copyright text-center py-3">© 2022 Copyright :
-            <a href="#"> Femme-Forte-Autonome.com</a>
+            <a id="_url7" itemprop="url" href="#"> Femme-Forte-Autonome.com</a>
         </div>
     </footer>
     <!--END OF FOOTER-->
